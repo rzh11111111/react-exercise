@@ -25,7 +25,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // const jsx= {
 //     <div>
 //     {show && greet} show为true展示greet，false不展示
-//      <ul>
+//      <ul className=“logoooo”>
 //     {
 //         a.map((item,index)=>{
 //             return <li key={'item'+index}>{item}</li>

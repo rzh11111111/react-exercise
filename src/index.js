@@ -12,16 +12,16 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // const greet=<h1>woshigreet</h1>;
 // const show = false;
 // const a = [0,1,2,3]
-    const obj=[
-        {
-            name:'Tom',
-            age:18
-        },
-        {
-            name:'ketty',
-            age:20
-        }
-    ]
+    // const obj=[
+    //     {
+    //         name:'Tom',
+    //         age:18
+    //     },
+    //     {
+    //         name:'ketty',
+    //         age:20
+    //     }
+    // ]
 // const jsx= {
 //     <div>
 //     {show && greet} show为true展示greet，false不展示

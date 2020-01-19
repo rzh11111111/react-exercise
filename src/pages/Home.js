@@ -21,27 +21,32 @@ export default class Home extends Component {
         // clearInterval(this.timerId)
     }
     setCounter=()=> {
-        setTimeout(()=>{
+        // setTimeout(()=>{
             
-            this.setState({//https://www.jianshu.com/p/799b8a14ef96
- //通过js的事件绑定程序 addEventListener 和使用setTimeout/setInterval 
-//等 React 无法掌控的 APIs情况下，setState是同步更新state
-                counter:this.state.counter + 2,
-            })
-            console.log(this.state.counter)
-        },0)
+//             this.setState({//https://www.jianshu.com/p/799b8a14ef96
+//  //通过js的事件绑定程序 addEventListener 和使用setTimeout/setInterval 
+// //等 React 无法掌控的 APIs情况下，setState是同步更新state
+//                 counter:this.state.counter + 2,
+//             })
+//             console.log(this.state.counter)
+//         },0)
         
-        // this.setState(nextState => { //异步
-        //     return {
-        //         counter:nextState.counter +1
-        //     }
-        // })
-        // this.setState(nextState => { //异步
-        //     return {
-        //         counter:nextState.counter +2
-        //     }
-        // })
-
+        //接收两个函数参数，第一个函数调用更新state，第二个函数是更新完之后的回调
+        this.setState((nextState,props) => { 
+            console.log(nextState,props)
+            return {
+                counter:nextState.counter +1
+            }
+        })
+        //此时nextState更新，但this.counter没更新
+        //多次this.setstate会合并到一起一起更新，最后就是0直接到3
+        this.setState((nextState,props) => { //
+            console.log(nextState,props)
+            return {
+                counter:nextState.counter +2
+            }
+        })
+        console.log(this.state.counter)
 
 
        

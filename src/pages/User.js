@@ -1,5 +1,5 @@
 import React , {useState , useEffect } from 'react'
-
+//hooks
 export default function User(){
     // const date = new Date()
     const [date,setDate] = useState(new Date());

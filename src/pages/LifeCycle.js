@@ -42,7 +42,17 @@ export default class LifeCycle extends Component {
             <div>LifeCycle
                 <p>{counter}</p>
                 <button onClick={this.setCounter}>改变counter</button>
+            
+            {!!(counter % 2) &&<Foo/>}
             </div>
         )
+    }
+}
+class Foo extends Component {
+    componentWillUnmount(){
+        console.log("componentWillUnmount",'Foo')
+    }
+    render(){
+        return <div>我是Foo</div>
     }
 }

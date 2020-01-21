@@ -26,9 +26,9 @@ export default class LifeCycle extends Component {
         console.log("componentDidUpdate",this.state.counter)
     }
 
-    shouldComponentUpdate(){
-        console.log("shouldComponentUpdate",this.state.counter)
-        return true;
+    shouldComponentUpdate(nextProps,nextState){
+        console.log("shouldComponentUpdate",this.state.counter,nextState.counter)
+        return true;//true的话就会render视图更新（值还是变），false的话render就不会更新，可以控制
     }
     setCounter=()=>{
         this.setState({

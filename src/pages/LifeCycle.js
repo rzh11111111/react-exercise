@@ -51,6 +51,7 @@ export default class LifeCycle extends Component {
 class Foo extends Component {
     componentWillUnmount(){
         console.log("componentWillUnmount",'Foo')
+        
     }
     render(){
         return <div>我是Foo</div>

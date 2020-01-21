@@ -11,6 +11,8 @@ export default class Search extends Component {
     //     name:''
     // }
     handle=()=>{
+        const {tellme} = this.props;
+        tellme('dsadsa')
         console.log('handle');
     }
     change=(event)=>{

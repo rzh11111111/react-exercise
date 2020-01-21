@@ -11,12 +11,16 @@ const store = {
     userName:'xiaoming'
   }
 }
+function tellme(msg){
+  console.log('tellme',msg)
+}
+
 function App() {
   return (
     <div className="App">
      {/* <Home></Home> */}
      {/* <User></User> */}
-     <Search store={store}></Search>
+     <Search store={store} tellme={tellme}></Search>
      <Button></Button>
     </div>
   );

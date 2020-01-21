@@ -5,12 +5,18 @@ import Button from './pages/Button/Button';
 // import User from './pages/User';
 import Search from './pages/Search';
 
+
+const store = {
+  userInfo:{
+    userName:'xiaoming'
+  }
+}
 function App() {
   return (
     <div className="App">
      {/* <Home></Home> */}
      {/* <User></User> */}
-     <Search></Search>
+     <Search store={store}></Search>
      <Button></Button>
     </div>
   );

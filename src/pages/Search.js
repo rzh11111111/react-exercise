@@ -22,9 +22,14 @@ export default class Search extends Component {
     }
     render(){
         const {name} =this.state
+        //父级向子级传递数据
+        const {userInfo} = this.props.store;
+        console.log('this',this)
+
         return (
             <div>
                 <h1>search</h1>
+                <h2>{userInfo.userName}</h2>
                 <button onClick={this.handle}>click</button>
                 <input value={name} onChange={this.change}></input>
             </div>

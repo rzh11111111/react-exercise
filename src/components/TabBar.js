@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
 
-export default class User extends Component {
+export default class TabBar extends Component {
     render(){
         console.log('user',this.props)
         return (
             <div>
-                user
+                tabbar
             </div>
         )
     }

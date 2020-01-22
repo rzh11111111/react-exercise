@@ -3,13 +3,13 @@ import './App.css';
 // import Home2 from './pages/Home2';
 import Button from './pages/Button/Button';
 import Home from './pages/Home';
-// import User from './pages/User';
+// import User2 from './pages/User2';
 // import Search from './pages/Search';
 // import LifeCycle from './pages/LifeCycle';
 
-const Context = React.createContext()
-const Provider = Context.Provider
-const Consumer = Context.Consumer
+//引入context
+import {Provider,Consumer} from './AppContext'
+// import User from './pages/User';
 
 //1 const store = {
 //   userInfo:{
@@ -31,15 +31,17 @@ function App() {
   return (
     <div className="App">
      {/* <Home2></Home2> */}
-     {/* <User></User> */}
+     {/* <User2></User2> */}
      {/*1 <Search store={store} tellme={tellme}></Search> */}
      {/* <LifeCycle></LifeCycle> */}
      <Provider value={store}>
-       <Consumer>
+     <Home/>
+       {/* <Consumer>
          {
-           ctx=><Home {...ctx}></Home>
+           
+          ctx=><User {...ctx}></User>
          }
-       </Consumer>
+       </Consumer> */}
      </Provider>
      {/* <Home></Home> */}
      <Button></Button>

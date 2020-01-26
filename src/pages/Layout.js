@@ -11,8 +11,9 @@ export default class Layout extends Component {
         console.log(this.props)
         return (
         <div>
-        {this.props.children}
-        {/* 组件 */}
+            {children.btn}
+        {/* {this.props.children} */}
+        {/* showTabBar&&组件 */}
         </div>
         )
     }

@@ -17,9 +17,12 @@ function HomeHandle(props){
     console.log(props)
     return (
         <Layout showTabBar= {false} title="商城首页">
-        <div>
+        {/* <div>
             <h1>home</h1>
-        </div>
+        </div> */}
+        {{
+            btn:<button>home按钮</button>
+        }}
         </Layout>
     )
 }

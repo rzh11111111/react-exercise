@@ -8,7 +8,9 @@ import Home from './pages/Home';
 // import LifeCycle from './pages/LifeCycle';
 
 //引入context
-import {Provider,Consumer} from './AppContext'
+import {Provider,
+  // Consumer,
+} from './AppContext'
 // import User from './pages/User';
 
 //1 const store = {
@@ -26,6 +28,12 @@ import {Provider,Consumer} from './AppContext'
       name:'xiaoming'
     }
   }
+  const store2 = {
+    home:{},
+    user:{
+      name:'Tom'
+    }
+  }
 
 function App() {
   return (
@@ -34,8 +42,9 @@ function App() {
      {/* <User2></User2> */}
      {/*1 <Search store={store} tellme={tellme}></Search> */}
      {/* <LifeCycle></LifeCycle> */}
-     <Provider value={store}>
+     <Provider value={{store,store2}}>
      <Home/>
+     
        {/* <Consumer>
          {
            
@@ -43,7 +52,6 @@ function App() {
          }
        </Consumer> */}
      </Provider>
-     {/* <Home></Home> */}
      <Button></Button>
     </div>
   );

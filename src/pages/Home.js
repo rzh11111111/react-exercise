@@ -16,7 +16,7 @@ export default class Home extends Component {
 function HomeHandle(props){
     console.log(props)
     return (
-        <Layout showTabBar= {false}>
+        <Layout showTabBar= {false} title="商城首页">
         <div>
             <h1>home</h1>
         </div>

@@ -1,18 +1,18 @@
 import React, {Component} from 'react'
-import { Consumer } from '../AppContext'
+import { consumerHandle } from '../AppContext'
 import Layout from './Layout';
 
-export default class Home extends Component {
-    render(){
-        console.log('home',this.props)
-        return <Consumer>
-                {
-                    ctx=><HomeHandle {...ctx}/>
-                }
-            </Consumer>
+// export default class Home extends Component {
+//     render(){
+//         console.log('home',this.props)
+//         return <Consumer>
+//                 {
+//                     ctx=><HomeHandle {...ctx}/>
+//                 }
+//             </Consumer>
         
-    }
-}
+//     }
+// }
 function HomeHandle(props){
     console.log(props)
     return (
@@ -26,3 +26,4 @@ function HomeHandle(props){
         </Layout>
     )
 }
+export default consumerHandle(HomeHandle)

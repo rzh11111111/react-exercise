@@ -11,7 +11,7 @@ import Home from './pages/Home';
 import {Provider,
   // Consumer,
 } from './AppContext'
-// import User from './pages/User';
+import User from './pages/User';
 
 //1 const store = {
 //   userInfo:{
@@ -38,6 +38,7 @@ import {Provider,
 function App() {
   return (
     <div className="App">
+      <User></User>
      {/* <Home2></Home2> */}
      {/* <User2></User2> */}
      {/*1 <Search store={store} tellme={tellme}></Search> */}

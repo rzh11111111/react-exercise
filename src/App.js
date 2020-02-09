@@ -12,6 +12,7 @@ import {Provider,
   // Consumer,
 } from './AppContext'
 import User from './pages/User';
+import HooksPage from './pages/HooksPage';
 
 //1 const store = {
 //   userInfo:{
@@ -38,6 +39,7 @@ import User from './pages/User';
 function App() {
   return (
     <div className="App">
+      <HooksPage/>
       <User></User>
      {/* <Home2></Home2> */}
      {/* <User2></User2> */}

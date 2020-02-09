@@ -7,7 +7,9 @@ export default class Layout extends Component {
         document.title=title
     }
     render(){
-        const {children , showTabBar}= this.props
+        const {children
+            //  , showTabBar
+            }= this.props
         console.log(this.props)
         return (
         <div>

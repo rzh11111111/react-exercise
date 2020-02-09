@@ -13,6 +13,7 @@ import {Provider,
 } from './AppContext'
 import User from './pages/User';
 import HooksPage from './pages/HooksPage';
+import HooksReducer from './pages/HooksReducer';
 
 //1 const store = {
 //   userInfo:{
@@ -39,7 +40,8 @@ import HooksPage from './pages/HooksPage';
 function App() {
   return (
     <div className="App">
-      <HooksPage/>
+      <HooksReducer/>
+      {/* <HooksPage/> */}
       <User></User>
      {/* <Home2></Home2> */}
      {/* <User2></User2> */}

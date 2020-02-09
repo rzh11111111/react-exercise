@@ -9,11 +9,23 @@ export default function HooksPage(){
         },1000)
         return ()=>clearInterval(timerId)
     })
+   
     return (
     <div>
         HooksPage
         <p>{date.toLocaleTimeString()}</p>
+        <AddFrult addFrult={item=>setFruits([...fruits,item])}></AddFrult>
         <FruitList fruits={fruits} setFruits={setFruits}/>
+        </div>
+    )
+}
+
+function AddFrult({addFrult}){
+    const [name,setName]=useState("")
+    return (
+        <div>
+        <input value={name} onChange={(e)=>setName(e.target.value)} />
+        <button onClick={()=>addFrult(name)}>点击添加</button>
         </div>
     )
 }

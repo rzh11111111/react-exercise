@@ -8,7 +8,7 @@ export default function HooksPage(){
             setDate(new Date());
         },1000)
         return ()=>clearInterval(timerId)
-    })
+    },[date])//只有在第二个参数发生变化（首次渲染）的时候才会触法effects
    
     return (
     <div>

@@ -1,6 +1,6 @@
 import React , {useReducer, useEffect} from "react";
 import { FruitList } from "../components/Fruit";
-
+//useReducer是useState的可选项，常用于组件有复杂状态逻辑时
 function fruitsReducer(state,action){//第一个参数当前状态，第二个参数是dispatch传递的
     switch(action.type){
         case 'init':

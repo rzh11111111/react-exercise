@@ -14,6 +14,7 @@ import {Provider,
 import User from './pages/User';
 import HooksPage from './pages/HooksPage';
 import HooksReducer from './pages/HooksReducer';
+import HooksContext from './pages/HooksContext';
 
 //1 const store = {
 //   userInfo:{
@@ -40,6 +41,7 @@ import HooksReducer from './pages/HooksReducer';
 function App() {
   return (
     <div className="App">
+      <HooksContext/>
       <HooksReducer/>
       {/* <HooksPage/> */}
       <User></User>

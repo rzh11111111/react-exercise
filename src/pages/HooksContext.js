@@ -21,6 +21,7 @@ export default function HooksContext(){
 
 
 function ContextChild(props){
+    //useContext用于在快速在函数组件中导入上下文
     const {user} = useContext(Context)
     console.log(useContext(Context))
     return(

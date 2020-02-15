@@ -1,7 +1,9 @@
 import React ,{useContext} from 'react';
-
-const Context = React.createContext();
-const Provider = Context.Provider;
+// 1、
+// const Context = React.createContext();
+// const Provider = Context.Provider;
+// 2.
+import {Context,Provider} from '../AppContext';
 
 export default function HooksContext(){
     const store = {

@@ -1,6 +1,6 @@
 import React , {useState,useEffect} from "react"
 import { AddFrult ,FruitList } from "../components/Fruit";
-
+//hooks就是给函数组件提供状态
 export default function HooksPage(){
     const [date,setDate] = useState(new Date());
     const [fruits, setFruits] = useState(["apple","banana"]);
